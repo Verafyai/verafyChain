@@ -112,17 +112,22 @@ def build(src, out, slug, title, desc):
 <meta name="twitter:image" content="{HOST}/banner.png">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..800&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
-<style>{CSS}</style>
+<style>{CSS}
+verafy-header{{display:block;min-height:64px;background:#0B0E12}}
+.vh-status{{font-family:var(--mono);font-size:12.5px;color:#F0B45A}}
+.vh-menu{{display:flex;flex-direction:column}}
+.vh-menu a{{display:block;padding:10px 0;color:#C9D2DC;text-decoration:none;font-size:15px;border-bottom:1px solid #1D2630}}
+.vh-menu a:hover{{color:#fff}}.vh-menu a[aria-current="page"]{{color:#5FE0C8}}
+</style>
 <script src="https://www.verafy.ai/header/v1/verafy-header.js" defer></script>
 </head>
 <body>
-<header class="wrap top">
-  <a class="brand" href="/">{MARK}Verafy Chain</a>
-  <nav class="tabs" aria-label="Verafy Chain and Verafy Harness">
+<verafy-header product="chain" links="Constitution:/constitution, Amendments:/amendments, Verafy Harness:https://harness.verafy.ai">
+  <span slot="status" class="vh-status">Concept. Not a running network.</span>
+  <div slot="menu" class="vh-menu">
 {nav}
-  </nav>
-  <span class="status">Concept. Not a running network.</span>
-</header>
+  </div>
+</verafy-header>
 <div class="wrap layout"><aside class="side" aria-label="On this page"><span class="lbl">On this page</span>{m.toc}</aside><article><span class="draft">Draft 0. Not sealed.</span>{body}</article></div>
 <footer class="wrap foot">
   <p>Draft text for Block 0 of Verafy Chain, a Verafy research concept. Nothing is sealed, nothing runs, and there is no token.</p>

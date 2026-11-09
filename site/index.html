@@ -194,6 +194,11 @@ td.k{color:var(--mute)}
 .pr p{font-size:16.5px;color:var(--mute)}
 .pr .pss{margin-top:8px;font-size:14px;line-height:1.9}
 .pr .pst{font-family:var(--mono);font-size:12.5px;color:var(--mute)}
+verafy-header{display:block;min-height:64px;background:#0B0E12}
+.vh-status{font-family:var(--mono);font-size:12.5px;color:#F0B45A}
+.vh-menu{display:flex;flex-direction:column}
+.vh-menu a{display:block;padding:10px 0;color:#C9D2DC;text-decoration:none;font-size:15px;border-bottom:1px solid #1D2630}
+.vh-menu a:hover{color:#fff}.vh-menu a[aria-current="page"]{color:#5FE0C8}
 </style>
 <link rel="icon" href="/logo.svg" type="image/svg+xml">
 <link rel="canonical" href="https://chain.verafy.ai/">
@@ -212,15 +217,9 @@ td.k{color:var(--mute)}
 <body>
 
 
-<section class="coinfree" aria-labelledby="coinfreeH">
-  <div class="wrap">
-    <h2 id="coinfreeH">Coin-free guarantee.</h2>
-    <p>There is no coin. There is no board of directors, no governance, no VC, no vesting contracts, no corrupt treasury, and no fake community funds. There is no secretive engineering team being paid by someone to build it. You can specify and get paid in any coin you want, so there is no need to release another one. There is no exchange launch and no pump and dump. Verafy Chain is just meant to bring people back to the basics of crypto: playing around, having fun, and doing something innovative. That's it.</p>
-  </div>
-</section>
-<header class="wrap top">
-  <a class="brand" href="/"><svg class="mark" viewBox="0 0 32 32" width="28" height="28" aria-hidden="true"><line x1="16" y1="16" x2="16.00" y2="5.00" stroke="currentColor" stroke-width="1.2" opacity=".45"/><line x1="16" y1="16" x2="26.46" y2="12.60" stroke="currentColor" stroke-width="1.2" opacity=".45"/><line x1="16" y1="16" x2="22.47" y2="24.90" stroke="currentColor" stroke-width="1.2" opacity=".45"/><line x1="16" y1="16" x2="9.53" y2="24.90" stroke="currentColor" stroke-width="1.2" opacity=".45"/><line x1="16" y1="16" x2="5.54" y2="12.60" stroke="currentColor" stroke-width="1.2" opacity=".45"/><circle cx="16" cy="16" r="5.2" fill="var(--accent)"/><rect x="12.80" y="1.80" width="6.4" height="6.4" rx="1" fill="var(--sheet)" stroke="currentColor" stroke-width="1.6"/><rect x="23.26" y="9.40" width="6.4" height="6.4" rx="1" fill="var(--sheet)" stroke="currentColor" stroke-width="1.6"/><rect x="19.27" y="21.70" width="6.4" height="6.4" rx="1" fill="var(--sheet)" stroke="currentColor" stroke-width="1.6"/><rect x="6.33" y="21.70" width="6.4" height="6.4" rx="1" fill="var(--sheet)" stroke="currentColor" stroke-width="1.6"/><rect x="2.34" y="9.40" width="6.4" height="6.4" rx="1" fill="var(--sheet)" stroke="currentColor" stroke-width="1.6"/></svg>Verafy Chain</a>
-  <nav class="tabs" aria-label="Verafy Chain and Verafy Harness">
+<verafy-header product="chain" links="Constitution:/constitution, Amendments:/amendments, Verafy Harness:https://harness.verafy.ai">
+  <span slot="status" class="vh-status">Concept. Not a running network.</span>
+  <div slot="menu" class="vh-menu">
     <a href="/" aria-current="page">Verafy Chain</a>
     <a href="/constitution">Constitution</a>
     <a href="https://harness.verafy.ai">Verafy Harness</a>
@@ -231,9 +230,15 @@ td.k{color:var(--mute)}
     <a href="https://asc.verafy.ai">Actually Smart Contracts</a>
     <a href="https://github.com/Verafyai/verafyHarness">GitHub</a>
     <a href="#roadmap">Roadmap</a>
-  </nav>
-  <span class="status">Concept. Not a running network.</span>
-</header>
+  </div>
+</verafy-header>
+<section class="coinfree" aria-labelledby="coinfreeH">
+  <div class="wrap">
+    <h2 id="coinfreeH">Coin-free guarantee.</h2>
+    <p>There is no coin. There is no board of directors, no governance, no VC, no vesting contracts, no corrupt treasury, and no fake community funds. There is no secretive engineering team being paid by someone to build it. You can specify and get paid in any coin you want, so there is no need to release another one. There is no exchange launch and no pump and dump. Verafy Chain is just meant to bring people back to the basics of crypto: playing around, having fun, and doing something innovative. That's it.</p>
+  </div>
+</section>
+
 
 <main class="wrap">
 <section class="hero" aria-labelledby="h1">
