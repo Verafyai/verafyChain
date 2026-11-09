@@ -113,6 +113,7 @@ def build(src, out, slug, title, desc):
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..800&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
 <style>{CSS}</style>
+<script src="https://www.verafy.ai/header/v1/verafy-header.js" defer></script>
 </head>
 <body>
 <header class="wrap top">
