@@ -36,7 +36,9 @@ Status: **built**: --json output, scoped keys, caps and allowlists, retry with b
 
 Nothing a juror reads is treated as an instruction to it. Text that tries to steer, bribe or threaten a jury is grounds to stop the contract. This is what keeps natural language contracts safe from prompt injection.
 
-Status: **built**: the juror tool lock and the pre-execute gate in DeepSeek Harness.
+Before a juror reads untrusted evidence, [Prompt Guard](https://github.com/Verafyai/prompt-guard) compiles it: text that tries to instruct the reader, including text hidden with invisible characters, look-alike letters or encodings, reaches the juror only as a quoted directive.
+
+Status: **built**: the juror tool lock and the pre-execute gate in DeepSeek Harness, and Prompt Guard in Verafy Harness. Open: task hijacks that never address the reader get through the guard.
 
 ## 7. No single model, no single lab
 
